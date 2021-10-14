@@ -23,7 +23,7 @@ Steps to run Sentiment Analyser on Google Kubernetes Engine on GCP -
 - Pull and tag sa-logic image via GCP cloud shell from dockerhub and then push it it GCP container registry.
 - Navigate to sa-logic container on GCP. Deploy and expose the service on your cluster.
 - Build java webapp project to get jar ```mvn install```
-- Change the SA_LOGIC_API_URL variable in sa-webapp Dockerfile to the external IP of sa-logic-service on GCP. Use the container port only. 
+- Change SA_LOGIC_API_URL variable in sa-webapp Dockerfile to the external IP of sa-logic-service on GCP. Use the container port only. 
 - Build sa-webapp ```docker build -f Dockerfile -t $DOCKER_USER_ID/sa-webapp .```
 - Push sa-webapp image to docker hub ```docker push $DOCKER_USER_ID/sa-webapp```
 - Pull and tag sa-webapp image via GCP cloud shell from dockerhub and then push it it GCP container registry.
