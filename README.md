@@ -12,7 +12,7 @@ ___
 
 This folder has screenshots for Mini-Project-1.
 
-Link to demo-video: https://drive.google.com/file/d/1AjqGf6_4GneBj3wRpostPFohy5LJNPEn/view?usp=sharing
+Link to demo-video: https://youtu.be/K06V6PhaMyo
 
 URL for docker images - 
 - https://hub.docker.com/repository/docker/varunkathuria/sa-frontend
