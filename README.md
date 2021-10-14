@@ -11,6 +11,7 @@ ___
 `Sentiment-Analysis`
 
 This folder has screenshots for Mini-Project-1.
+Link to demo-video: https://drive.google.com/file/d/1AjqGf6_4GneBj3wRpostPFohy5LJNPEn/view?usp=sharing
 
 URL for docker images - 
 - https://hub.docker.com/repository/docker/varunkathuria/sa-frontend
