@@ -35,5 +35,5 @@ Steps to run Sentiment Analyser on Google Kubernetes Engine on GCP -
 - Pull and tag sa-frontend image via GCP cloud shell from dockerhub and then push it it GCP container registry.
 - Navigate to sa-frontend container on GCP. Deploy and expose the service on your cluster.
 - Access the sa-frontend-service and we have a working sentiment analyser deployed on GCP.
-
+___
 
