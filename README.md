@@ -9,6 +9,7 @@ URL for docker image: https://hub.docker.com/repository/docker/varunkathuria/pyt
 ___
 
 `Sentiment-Analysis`
+
 This folder has screenshots for Mini-Project-1.
 
 URL for docker images - 
@@ -16,6 +17,8 @@ URL for docker images -
 - https://hub.docker.com/repository/docker/varunkathuria/sa-webapp
 - https://hub.docker.com/repository/docker/varunkathuria/sa-logic
 
-Steps to run Sentiment Analyser on Google Kubernetes Engine on GCP
+Steps to run Sentiment Analyser on Google Kubernetes Engine on GCP -
+- Build sa-logic using  ```python docker build -f Dockerfile -t $DOCKER_USER_ID/sentiment-analysis-logic .```
+- 
 
 
