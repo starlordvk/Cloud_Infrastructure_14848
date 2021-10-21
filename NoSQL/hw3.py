@@ -2,8 +2,8 @@ import boto3
 import csv
 
 s3 = boto3.resource('s3',
-                    aws_access_key_id = 'AKIAUE2HQJLIQSADFCWP',
-                    aws_secret_access_key = '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')
+                    aws_access_key_id = '',
+                    aws_secret_access_key = '')
 
 # try:
 #     bucket = s3.Bucket("varunhw3bucket")
@@ -26,8 +26,8 @@ s3 = boto3.resource('s3',
 
 dyndb = boto3.resource('dynamodb',
                         region_name='us-west-2',
-                        aws_access_key_id='AKIAUE2HQJLIQSADFCWP',
-                        aws_secret_access_key='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'
+                        aws_access_key_id='',
+                        aws_secret_access_key='s'
                         )
                         
 try:
