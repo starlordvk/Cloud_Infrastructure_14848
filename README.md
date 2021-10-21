@@ -39,3 +39,7 @@ Steps to run Sentiment Analyser on Google Kubernetes Engine on GCP -
 - Access the sa-frontend-service and we have a working sentiment analyser deployed on GCP.
 ___
 
+`NoSQL`
+Added code file, data files and screenshots for query and results in the NoSQL folder.
+
+___
