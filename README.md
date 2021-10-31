@@ -47,7 +47,7 @@ ___
 
 `Project Checkpoint - Big Data Toolbox Application`
 
-Added code file, and screenshots for query and results in the Course-project-checkpoint folder. There are also some yaml files which I used to test deploymenmts on minikube.
+Added code file, and screenshots for Toolbox GUI and all delployments on GCP in the Course-project-checkpoint folder. There are also some yaml files which I used to test deploymenmts on minikube.
 
 URL for docker images - 
 - https://hub.docker.com/repository/docker/varunkathuria/frontend-terminal
