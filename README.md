@@ -92,5 +92,5 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 2. Navigate to bde2020/hadoop-datanode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set SERVICE_PRECONDITION=http://namenode-service:9000 env variable. No need to expose this as a service.
 3. Access hadooop datanode via the datanodes tab on namenode-service URL.
 
-![alt text](Course-project-checkpoint/screenshots/Toolbox-terminal.png)
+![alt text](https://github.com/starlordvk/Cloud_Infrastructure_14848/Course-project-checkpoint/screenshots/Toolbox-terminal.png)
 ___
