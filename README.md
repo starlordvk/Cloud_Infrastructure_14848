@@ -55,6 +55,7 @@ URL for docker images -
 - https://hub.docker.com/r/bitnami/spark
 - https://hub.docker.com/layers/bde2020/hadoop-namenode/2.0.0-hadoop3.1.3-java8/
 - https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/
+- https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
 
 Steps to deploy images on Google Kubernetes Engine on GCP -
 
@@ -62,7 +63,10 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 Screenshots for all the deployments and services on GCP -
 
 ![deployments](Course-project-checkpoint/screenshots/Deployments.PNG)
+
 ![services](Course-project-checkpoint/screenshots/Services.PNG)
+
+Deatailed steps for deploying all images - 
 
 #### Terminal GUI
   
