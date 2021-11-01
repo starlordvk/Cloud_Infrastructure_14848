@@ -100,7 +100,7 @@ Deatailed steps for deploying all images -
 2. Navigate to bde2020/hadoop-namenode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set CLUSTER_NAME=mycluster env variable. Expose the loadbalancer service on your cluster on port 9000 and 9870.
 3. Access hadooop namenode via the namenode-service URL.
 
-![Namenode](Course-project-checkpoint/screenshots/Hadoop-namenode.PNG)
+![Hadoop](Course-project-checkpoint/screenshots/Hadoop.PNG)
 
 #### Hadoop Datanode
 
