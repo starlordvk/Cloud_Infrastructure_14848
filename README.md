@@ -59,6 +59,10 @@ URL for docker images -
 Steps to deploy images on Google Kubernetes Engine on GCP -
 
 Firstly I created a new project and a new cluster on GCP for this toolbox project.
+Screenshots for all the deployments and services on GCP -
+
+![deployments](Course-project-checkpoint/screenshots/Deployments.PNG)
+![services](Course-project-checkpoint/screenshots/Services.PNG)
 
 #### Terminal GUI
   
@@ -76,7 +80,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 2. Navigate to minimal-notebook container on GCP. Deploy and expose the loadbalancer service on your cluster on port 8888.
 3. Access the jupyter-notebook via the jupyter-service URL.
 
-![Toolbox](Course-project-checkpoint/screenshots/Jupyter.PNG)
+![Jupyter](Course-project-checkpoint/screenshots/Jupyter.PNG)
   
 #### Spark
 
@@ -84,7 +88,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 2. Navigate to bitnami/spark container on GCP. While deploying the spark image, add the env variable SPARK_MODE=master and expose the loadbalancer service on your cluster on port 8080.
 3. Access spark via the spark-service URL.
 
-![Toolbox](Course-project-checkpoint/screenshots/Spark.PNG)
+![Spark](Course-project-checkpoint/screenshots/Spark.PNG)
   
 #### Hadoop Namenode
 
@@ -92,7 +96,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 2. Navigate to bde2020/hadoop-namenode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set CLUSTER_NAME=mycluster env variable. Expose the loadbalancer service on your cluster on port 9000 and 9870.
 3. Access hadooop namenode via the namenode-service URL.
 
-![Toolbox](Course-project-checkpoint/screenshots/Hadoop-namenode.PNG)
+![Namenode](Course-project-checkpoint/screenshots/Hadoop-namenode.PNG)
 
 #### Hadoop Datanode
 
@@ -108,5 +112,5 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 4. Navigate to sonarqube-scanner container on GCP. Deploy and expose the loadbalancer service on your cluster on port 9000.
 5. Access sonarqube via the sonarqube-service URL.
 
-![Toolbox](Course-project-checkpoint/screenshots/Sonarqube.PNG)
+![Sonarqube](Course-project-checkpoint/screenshots/Sonarqube.PNG)
 ___
