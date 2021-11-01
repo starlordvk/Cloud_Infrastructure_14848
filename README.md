@@ -65,7 +65,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 1. Build terminal-fronted ```docker build -f Dockerfile -t $DOCKER_USER_ID/terminal-frontend .```
 2. Push terminal-frontend image to docker hub ```docker push $DOCKER_USER_ID/terminal-frontend```
 3. Pull and tag terminal-frontend image via GCP cloud shell from dockerhub and then push it it GCP container registry.
-4. Navigate to terminal-frontend container on GCP. Deploy and expose the service on your cluster on post 80.
+4. Navigate to terminal-frontend container on GCP. Deploy and expose the service on your cluster on port 80.
 5. Access the terminal-frontend-service.
 
 ![Toolbox](Course-project-checkpoint/screenshots/Toolbox-terminal.PNG)
@@ -73,7 +73,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 #### Jupyter
 
 1. Pull and tag ```docker pull jupyter/minimal-notebook``` image via GCP cloud shell from dockerhub and then push it it GCP container registry.
-2. Navigate to minimal-notebook container on GCP. Deploy and expose the loadbalancer service on your cluster on post 8888.
+2. Navigate to minimal-notebook container on GCP. Deploy and expose the loadbalancer service on your cluster on port 8888.
 3. Access the jupyter-notebook via the jupyter-service URL.
 
 ![Toolbox](Course-project-checkpoint/screenshots/Jupyter.PNG)
@@ -81,7 +81,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 #### Spark
 
 1. Pull and tag ```docker pull bitnami/spark``` image via GCP cloud shell from dockerhub and then push it it GCP container registry.
-2. Navigate to bitnami/spark container on GCP. While deploying the spark image, add the env variable SPARK_MODE=master and expose the loadbalancer service on your cluster on post 8080.
+2. Navigate to bitnami/spark container on GCP. While deploying the spark image, add the env variable SPARK_MODE=master and expose the loadbalancer service on your cluster on port 8080.
 3. Access spark via the spark-service URL.
 
 ![Toolbox](Course-project-checkpoint/screenshots/Spark.PNG)
@@ -89,7 +89,7 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 #### Hadoop Namenode
 
 1. Pull and tag ```docker pull bde2020/hadoop-namenode:2.0.0-hadoop3.1.3-java8```  image via GCP cloud shell from dockerhub and then push it it GCP container registry.
-2. Navigate to bde2020/hadoop-namenode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set CLUSTER_NAME=mycluster env variable. Expose the loadbalancer service on your cluster on post 9000 and 9870..
+2. Navigate to bde2020/hadoop-namenode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set CLUSTER_NAME=mycluster env variable. Expose the loadbalancer service on your cluster on port 9000 and 9870.
 3. Access hadooop namenode via the namenode-service URL.
 
 ![Toolbox](Course-project-checkpoint/screenshots/Hadoop-namenode.PNG)
@@ -100,4 +100,13 @@ Firstly I created a new project and a new cluster on GCP for this toolbox projec
 2. Navigate to bde2020/hadoop-datanode container on GCP. While deploying the namenode image, add all the env variablse in ```hadoop.env``` file. Also set SERVICE_PRECONDITION=http://namenode-service:9000 env variable. No need to expose this as a service.
 3. Access hadooop datanode via the datanodes tab on namenode-service URL.
 
+#### Sonarqube with sonar scanner
+
+1. Build sonarqube-scanner with  ```docker build -f Dockerfile -t $DOCKER_USER_ID/sonarqube-scanner .``` This dockerfile will copy sonar scanner to sonarqube container and build the new image.
+2. Push sonarqube-scanner image to docker hub ```docker push $DOCKER_USER_ID/sonarqube-scanner```
+3. Pull and tag sonarqube-scanner image via GCP cloud shell from dockerhub and then push it it GCP container registry.
+4. Navigate to sonarqube-scanner container on GCP. Deploy and expose the loadbalancer service on your cluster on port 9000.
+5. Access sonarqube via the sonarqube-service URL.
+
+![Toolbox](Course-project-checkpoint/screenshots/Sonarqube.PNG)
 ___
