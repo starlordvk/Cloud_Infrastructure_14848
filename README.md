@@ -123,11 +123,27 @@ ___
 
 Added screenshots for Hadoop-Mapreduce for 1901, 1902 and running on 1901 and 1902 together. I've also added screenshots for files on hadoop file system, cluster local file system and GCP bucket contents.
 
+I ran mapreduce in 3 ways -
+1. Only on 1901 to get max temp of every day for year 1901 - ResultsMax1901PerDay file
+2. Only on 1902 to get max temp of every day for year 1902 - ResultsMax1902PerDay file
+3. On 1901 and 1902 both together to get max temp of every day for year 1901 adn 1902 in same file - ResultsMax1901_1902PerDay file
+
 Steps to run map reduce on Hadoop on GCP -
 
 1. Firstly I created a new dataproc cluster on GCP.
 2. I added all the files - temperature_mapper.py, temperature_reducer.py, 1901 and 1902 to bucket of this cluster. 
 3. Copied all the local files from the cluster to hadoop fs using ```gsutil cp gs://dataproc-staging-us-central1-548858251382-4ykzzv7k/filename .```
+
+Summary - 
+GCP buckets screenshot - 
+![GCP buckets](HW4-hadoop/GCP_bucket.PNG)
+
+GCP Cluster local files -
+![Cluster local files](HW4-hadoop/cluster_local_files.PNG)
+
+Hadoop file system files -
+![Hadoop File System](HW4-hadoop/hadoop_filesystem_files.PNG)
+
 
 Deatailed steps for running map reduce on 1901 and 1902 - 
 
