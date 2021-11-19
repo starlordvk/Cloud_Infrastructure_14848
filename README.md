@@ -128,6 +128,8 @@ I ran mapreduce in 3 ways -
 2. Only on 1902 to get max temp of every day for year 1902 - ResultsMax1902PerDay file
 3. On 1901 and 1902 both together to get max temp of every day for year 1901 adn 1902 in same file - ResultsMax1901_1902PerDay file
 
+(The results are merged based on the hash value, so  they might be out of order, but they have max temp of everyday for 1901 and 1902 years)
+
 Steps to run map reduce on Hadoop on GCP -
 
 1. Firstly I created a new dataproc cluster on GCP.
