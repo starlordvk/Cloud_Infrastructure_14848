@@ -136,12 +136,15 @@ Steps to run map reduce on Hadoop on GCP -
 
 Summary - 
 GCP buckets screenshot - 
+
 ![GCP buckets](HW4-hadoop/GCP_bucket.PNG)
 
 GCP Cluster local files -
+
 ![Cluster local files](HW4-hadoop/cluster_local_files.PNG)
 
 Hadoop file system files -
+
 ![Hadoop File System](HW4-hadoop/hadoop_filesystem_files.PNG)
 
 
