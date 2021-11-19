@@ -118,3 +118,39 @@ Deatailed steps for deploying all images -
 
 ![Sonarqube](Course-project-checkpoint/screenshots/Sonarqube.PNG)
 ___
+
+`HW4 - Find the maximum temperature in NCDC data using hadoop on GCP`
+
+Added screenshots for Hadoop-Mapreduce for 1901, 1902 and running on 1901 and 1902 together. I've also added screenshots for files on hadoop file system, cluster local file system and GCP bucket contents.
+
+Steps to run map reduce on Hadoop on GCP -
+
+1. Firstly I created a new dataproc cluster on GCP.
+2. I added all the files - temperature_mapper.py, temperature_reducer.py, 1901 and 1902 to bucket of this cluster. 
+3. Copied all the local files from the cluster to hadoop fs using ```gsutil cp gs://dataproc-staging-us-central1-548858251382-4ykzzv7k/filename .```
+
+Deatailed steps for running map reduce on 1901 and 1902 - 
+
+#### 1901
+  
+1. Run hadoop on 1901 ```hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files temperature_mapper.py,temperature_reducer.py  -mapper 'python temperature_mapper.py' -reducer 'python temperature_reducer.py' -input /1901 -output /OutputMax1901PerDay```
+2. Merge reduced Results  ```hadoop fs -getmerge /OutputMax1901PerDay ResultsMax1901PerDay```
+3. Copy results file to GCP bucket ```gsutil cp ResultsMax1901PerDay  gs://dataproc-staging-us-central1-bucketno/```
+
+![1901](HW4-hadoop/Hadoop_mapreduce_1901.PNG)
+
+#### 1902
+  
+1. Run hadoop on 1902 ```hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files temperature_mapper.py,temperature_reducer.py  -mapper 'python temperature_mapper.py' -reducer 'python temperature_reducer.py' -input /1902 -output /OutputMax1902PerDay```
+2. Merge reduced Results  ```hadoop fs -getmerge /OutputMax1902PerDay ResultsMax1902PerDay```
+3. Copy results file to GCP bucket ```gsutil cp ResultsMax1902PerDay  gs://dataproc-staging-us-central1-bucketno/```
+
+![1902](HW4-hadoop/Hadoop_mapreduce_1902.PNG)
+  
+#### 1901 and 1902
+  
+1. Run hadoop on 1901 and 1902 together ```hadoop jar /usr/lib/hadoop/hadoop-streaming.jar -files temperature_mapper.py,temperature_reducer.py  -mapper 'python temperature_mapper.py' -reducer 'python temperature_reducer.py' -input /1902 /1901 -output /OutputMax1901_1902PerDay```
+2. Merge reduced Results  ```hadoop fs -getmerge /OutputMax1901_1902PerDay ResultsMax1901_1902PerDay```
+3. Copy results file to GCP bucket ```gsutil cp ResultsMax1901_1902PerDay  gs://dataproc-staging-us-central1-bucketno/```
+
+![1901_1902](HW4-hadoop/Hadoop_mapreduce_1901_1902.PNG)
