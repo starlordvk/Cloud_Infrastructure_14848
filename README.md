@@ -180,6 +180,8 @@ ___
 
 `Course Project Final - Big Data Toolbox Application`
 
+Video for demo - https://youtu.be/FS_dQYwGn7M
+
 Implemented the following for the course project -
 1. Containerized all four applications (Jupyter, Spark, Hadoop, SonarQube)
 2. Deployed all containers to minikube for local testing.
