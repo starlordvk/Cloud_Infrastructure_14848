@@ -66,7 +66,7 @@ Screenshots for all the deployments and services on GCP -
 
 ![services](Course-project-checkpoint/screenshots/Services.PNG)
 
-### Detailed steps for deploying all images - 
+### Detailed steps for deploying all images
 
 #### Terminal GUI
   
