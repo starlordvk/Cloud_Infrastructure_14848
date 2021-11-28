@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spark-master
+  labels:
+    app: spark-master
+spec:
+  selector:
+    matchLabels:
+      app: spark-master
+  replicas: 1
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1 
+  template:
+    metadata:
+      labels:
+        app: spark-master
+    spec:
+      containers:
+      - image: bitnami/spark
+        imagePullPolicy: Always
+        name: spark-master
+        env:
+          - name: SPARK_MODE
+            value: "master"
+        ports:
+          - containerPort: 8080
