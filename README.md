@@ -195,6 +195,7 @@ URL for all the docker images used in this project-
 - https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
 
 I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
+1. Build and Deploy Toolbox Frontend GUI [here](#Terminal-GUI).
 
 All containers deployed on GCP as services - 
 ![GCP Services](Course-project/GKE_Services_screenshot.PNG)
