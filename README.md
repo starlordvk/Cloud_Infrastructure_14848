@@ -196,3 +196,8 @@ URL for all the docker images used in this project-
 
 I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
 
+All containers deployed on GCP as services - 
+![GCP Services](Course-project/GKE_Services_screenshot.PNG)
+
+Toolbox GUI -
+![Toolbox_GUI](Course-project/Web_App_GUI.PNG)
