@@ -194,11 +194,34 @@ URL for all the docker images used in this project-
 - https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/
 - https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
 
-I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
-1. Build and Deploy Toolbox Frontend GUI [here](#Terminal-GUI).
+All deployments on GCP - 
+![GCP Services](Course-project/GKE_Deployments.PNG)
 
 All containers deployed on GCP as services - 
 ![GCP Services](Course-project/GKE_Services_screenshot.PNG)
 
-Toolbox GUI -
+
+I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
+1. Build and Deploy Toolbox Frontend GUI [here](#Terminal-GUI).
+
 ![Toolbox_GUI](Course-project/Web_App_GUI.PNG)
+
+2. Build and Deploy Jupyter Notebook [here](#Jupyter).
+
+![Jupyter](Course-project/jupyter_notebook.PNG)
+
+3. Build and Deploy Hadoop Namenode(replicas = 1) and Hadoop Datanode (replicas = 2) [here](#Hadoop-Namenode).
+
+![Namenode](Course-project/Hadoop_namenode.PNG)
+
+![Datanode](Course-project/Hadoop_datanode.PNG)
+
+4. Build and Deploy Spark [here](#Spark).
+
+![Spark](Course-project/Spark.PNG)
+
+5. Build and Deploy Sonarqube with sonarscanner [here](#Sonarqube-with-sonar-scanner).
+
+![Sonarqube](Course-project/Sonarqube.PNG)
+
+
