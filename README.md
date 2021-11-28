@@ -66,6 +66,8 @@ Screenshots for all the deployments and services on GCP -
 
 ![services](Course-project-checkpoint/screenshots/Services.PNG)
 
+### Place 1
+
 Deatailed steps for deploying all images - 
 
 #### Terminal GUI
@@ -175,3 +177,23 @@ Deatailed steps for running map reduce on 1901 and 1902 -
 3. Copy results file to GCP bucket ```gsutil cp ResultsMax1901_1902PerDay  gs://dataproc-staging-us-central1-bucketno/```
 
 ![1901_1902](HW4-hadoop/Hadoop_mapreduce_1901_1902.PNG)
+
+___
+
+`Course Project Final - Big Data Toolbox Application`
+Implemented the following for the course project -
+1. Containerized all four applications (Jupyter, Spark, Hadoop, SonarQube)
+2. Deployed all containers to minikube for local testing.
+3. Deployed all containers to Google Kubernetes Engine and GCP.
+4. Build GUI to launch all the appllications on a button click!
+
+URL for all the docker images used in this project- 
+- https://hub.docker.com/repository/docker/varunkathuria/frontend-terminal
+- https://hub.docker.com/r/jupyter/minimal-notebook
+- https://hub.docker.com/r/bitnami/spark
+- https://hub.docker.com/layers/bde2020/hadoop-namenode/2.0.0-hadoop3.1.3-java8/
+- https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/
+- https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
+
+I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#place-1).
+
