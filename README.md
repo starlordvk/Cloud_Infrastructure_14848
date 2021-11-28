@@ -186,6 +186,8 @@ Implemented the following for the course project -
 3. Deployed all containers to Google Kubernetes Engine and GCP.
 4. Build GUI to launch all the appllications on a button click!
 
+Files 
+
 URL for all the docker images used in this project- 
 - https://hub.docker.com/repository/docker/varunkathuria/frontend-terminal
 - https://hub.docker.com/r/jupyter/minimal-notebook
@@ -194,14 +196,19 @@ URL for all the docker images used in this project-
 - https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/
 - https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
 
+Also included dockerfiles for frontend and sonarqube with sonarscanner. Also added yaml config files used for configuring nodes on minikube.
+
 All deployments on GCP - 
+
 ![GCP Services](Course-project/GKE_Deployments.PNG)
 
 All containers deployed on GCP as services - 
+
 ![GCP Services](Course-project/GKE_Services_screenshot.PNG)
 
 
 I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
+
 1. Build and Deploy Toolbox Frontend GUI [here](#Terminal-GUI).
 
 ![Toolbox_GUI](Course-project/Web_App_GUI.PNG)
@@ -224,4 +231,5 @@ I've already added all the steps on how to build these images and deploy them on
 
 ![Sonarqube](Course-project/Sonarqube.PNG)
 
+___
 
