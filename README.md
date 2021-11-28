@@ -66,9 +66,7 @@ Screenshots for all the deployments and services on GCP -
 
 ![services](Course-project-checkpoint/screenshots/Services.PNG)
 
-### Place 1
-
-Deatailed steps for deploying all images - 
+### Detailed steps for deploying all images - 
 
 #### Terminal GUI
   
@@ -195,5 +193,5 @@ URL for all the docker images used in this project-
 - https://hub.docker.com/layers/bde2020/hadoop-datanode/2.0.0-hadoop3.2.1-java8/
 - https://hub.docker.com/repository/docker/varunkathuria/sonarqube-scanner
 
-I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#place-1).
+I've already added all the steps on how to build these images and deploy them on GCP in the checkpoint section [here](#detailed-steps-for-deploying-all-images).
 
