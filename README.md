@@ -179,6 +179,7 @@ Deatailed steps for running map reduce on 1901 and 1902 -
 ___
 
 `Course Project Final - Big Data Toolbox Application`
+
 Implemented the following for the course project -
 1. Containerized all four applications (Jupyter, Spark, Hadoop, SonarQube)
 2. Deployed all containers to minikube for local testing.
