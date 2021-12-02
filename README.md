@@ -235,3 +235,21 @@ I've already added all the steps on how to build these images and deploy them on
 
 ___
 
+`HW5 - Inverted Index`
+
+Steps:
+1. Pull MML spark image from dockerhub using ```docker pull mcr.microsoft.com/mmlspark/release```
+2. Run image as container ```docker run -it -p 8888:8888 mcr.microsoft.com/mmlspark/release```
+3. Run ```jupyter notebook``` command in conatiner and access notebook via http://localhost:8888/
+4. Unzip all files from data.zip in the textfile folder.
+
+![inputfiles](HW5-InvertedIndex/input_files.PNG)
+
+5. Run inverted_index.py
+![jupyternotebook](HW5-InvertedIndex/jupyter_notebook_screenshot.PNG)
+
+7. Output files are in counts_files folder
+
+![outputfiles](HW5-InvertedIndex/output_files.PNG)
+
+
