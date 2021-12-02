@@ -236,7 +236,7 @@ I've already added all the steps on how to build these images and deploy them on
 ___
 
 `HW5 - Inverted Index`
-
+Code is in inverted_index.py
 Output files are in the HW5-InvertedIndex folder as part-00000 and part-00001. I have some output examples in the end.
 
 Steps:
