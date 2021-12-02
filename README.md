@@ -246,10 +246,18 @@ Steps:
 ![inputfiles](HW5-InvertedIndex/input_files.PNG)
 
 5. Run inverted_index.py
+
 ![jupyternotebook](HW5-InvertedIndex/jupyter_notebook_screenshot.PNG)
 
-7. Output files are in counts_files folder
+6. Output files are in counts_files folder
 
 ![outputfiles](HW5-InvertedIndex/output_files.PNG)
+
+
+Output Examples:
+
+('brother', {'file:/notebooks/textfiles/asyoulikeit': 15, 'file:/notebooks/textfiles/kingjohn': 13, 'file:/notebooks/textfiles/2kinghenryiv': 8, 'file:/notebooks/textfiles/othello': 1, 'file:/notebooks/textfiles/Miserables.txt': 65, 'file:/notebooks/textfiles/twogentlemenofverona': 1, 'file:/notebooks/textfiles/comedyoferrors': 3, 'file:/notebooks/textfiles/romeoandjuliet': 3, 'file:/notebooks/textfiles/2kinghenryvi': 4, 'file:/notebooks/textfiles/1kinghenryiv': 11, 'file:/notebooks/textfiles/tamingoftheshrew': 1, 'file:/notebooks/textfiles/war_and_peace.txt': 79, 'file:/notebooks/textfiles/titusandronicus': 17, 'file:/notebooks/textfiles/allswellthatendswell': 3, 'file:/notebooks/textfiles/anna_karenhina.txt': 130, 'file:/notebooks/textfiles/winterstale': 2, 'file:/notebooks/textfiles/1kinghenryvi': 1, 'file:/notebooks/textfiles/kinghenryv': 13, 'file:/notebooks/textfiles/kinglear': 5, 'file:/notebooks/textfiles/kinghenryviii': 2, 'file:/notebooks/textfiles/3kinghenryvi': 30, 'file:/notebooks/textfiles/kingrichardiii': 27, 'file:/notebooks/textfiles/kingrichardii': 6, 'file:/notebooks/textfiles/measureforemeasure': 34, 'file:/notebooks/textfiles/twelfthnight': 6, 'file:/notebooks/textfiles/timonofathens': 1, 'file:/notebooks/textfiles/tempest': 9, 'file:/notebooks/textfiles/juliuscaesar': 5, 'file:/notebooks/textfiles/NotreDame_De_Paris.txt': 38, 'file:/notebooks/textfiles/muchadoaboutnothing': 15, 'file:/notebooks/textfiles/hamlet': 3, 'file:/notebooks/textfiles/troilusandcressida': 11, 'file:/notebooks/textfiles/antonyandcleopatra': 7, 'file:/notebooks/textfiles/cymbeline': 10})
+
+
 
 
